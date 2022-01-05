@@ -1,0 +1,18 @@
+table SubRootProto1 {
+    sub_field1: int;
+}
+
+table SubRootProto2 {
+    timestamp: long;
+    sub_field1: int;
+}
+
+table RootProto {
+    field1: string;
+    field2: [byte];
+    sub_root1: SubRootProto1;
+    sub_root2: SubRootProto2;
+    field3: int;
+}
+
+root_type RootProto;
